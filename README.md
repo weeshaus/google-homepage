@@ -1,0 +1,1 @@
+This is me learning how to reconstruct the Google Homepage to practice HTML and CSS.
