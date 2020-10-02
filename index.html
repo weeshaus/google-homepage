@@ -1,7 +1,8 @@
 <style>
+
     .header{
         position: absolute;
-        margin: 7px 0 0 10px 10px;
+        margin: 7px 0 0 0 10px 10px;
 
     }
     ul {
@@ -9,8 +10,11 @@
         margin: 0;
         padding: 0;
         position: fixed;
-        top: 0;
+        top: 20px;
         width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        
     }
 
     li {
@@ -23,7 +27,9 @@
         
     }
     .alicia {
-        border-radius: 50px;
+        border-radius: 70px;
+        position: fixed;
+               
         
     }
     .google-logo{
@@ -45,12 +51,56 @@
         background-image: url('https://img.icons8.com/small/2x/search.png');
         background-position: 10px 10px; 
         background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
+        padding: 12px 20px 12px 30px;
         margin-top: 40px;
+        color:black
     }
-    .footer{
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container > button {
+  background-color: #f1f1f1;
+  width: auto;
+  margin: 10px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  
+}
+
+
+.flex-container > button:hover {
+    border-color: black;
+
+}
+ .footer{
+    position: absolute;
+    margin: 7px 0 0 0 10px 10px;
+    
+
 
     }
+
+ul1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
+    font-size: 14px;
+        
+}
 </style>
 <head>
 </head>
@@ -59,11 +109,15 @@
         <center>
         <div class="header">
             <ul>
-                <li style="float:left"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjGvNC304_sAhUmknIEHVRUDXUQkNQCCAM&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S">About</a></li>
-                <li style="float:left"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjGvNC304_sAhUmknIEHVRUDXUQpMwCCAQ&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a></li>
-                <li style="float:right"><a href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
-                <li style="float:right"><a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a></li> 
-                <li style="float:right"><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"><img class="alicia" src="https://lh3.googleusercontent.com/-cErJR1El0zo/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuck-Ty4PKQNFaT-NGFesElIiunUxwA/photo.jpg?sz=46"></a></li>   
+                <li style="float:left"><a href="">About</a></li>
+                <li style="float:left"><a href="">Store</a></li>
+                <li style="float:right"><a href=""><img class="alicia" src="https://lh3.googleusercontent.com/-cErJR1El0zo/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuck-Ty4PKQNFaT-NGFesElIiunUxwA/photo.jpg?sz=46"></a></li> 
+                <li style="float:right"><a href="">Google Apps</a></li>
+                <li style="float:right"><a href="">Images</a></li> 
+                <li style="float:right"><a href="">Gmail</a></li>
+                
+                <
+                  
             </ul>
         
 
@@ -76,9 +130,27 @@
         <div class="search">
             <form>
                 <input type="text">
+
             </form>
+
+            <div class="flex-container">
+                <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+
+        </div>
+        <div>
+
+            <p style="font-size:14px"><a href="">Meet Google TV!</a> Get the entertainment you love, with a little help from Google</p>
 
         </div>
         <div class="footer">
+            <ul1>
+                <li style="float:left"><a href="">Advertising</a></li>
+                <li style="float:left"><a href="">Business</a></li>
+                <li style="float:left"><a href="">How Search works</a></li>
+                <li style="float:right"><a href="">Settings</a></li>
+                <li style="float:right"><a href="">Terms</a></li>
+                <li style="float:right"><a href="">Privacy</a></li>
+            </ul1>
         </div>
     </body>
